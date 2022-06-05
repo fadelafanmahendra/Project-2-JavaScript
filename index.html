@@ -1,0 +1,72 @@
+<HTML>
+	<HEAD>
+		<TITLE>Project : JavaScript</TITLE>
+		<style>
+			body {
+				font-family: sans-serif;
+			}
+		</style>
+	</HEAD>
+	<BODY>
+		<SCRIPT language="JavaScript">
+			function cetak() {
+				var nama = (document.fform.inama.value);
+				var nim = (document.fform.inim.value);
+				var fak = (document.fform.ifak.value);
+				var prodi = (document.fform.iprod.value);
+				var angk = (document.fform.iang.value);
+
+				document.fform.onama.value = nama;
+				document.fform.onim.value = nim;
+				document.fform.ofak.value = fak;
+				document.fform.oprod.value = prodi;
+				document.fform.oang.value = angk;
+			}
+		</SCRIPT>
+		<FORM NAME ="fform">
+			<table border="1" align="center"width="50%" style="background-image: linear-gradient(orange, white);">
+				<tr>
+					<td width="20%"><center><img src="https://fkip.uad.ac.id/wp-content/uploads/Logo-UAD-Berwarna.png" width="80%"></center></td>
+					<td width="80%"><H2 ALIGN="center">UNIVERSITAS AHMAD DAHLAN</H2><h3 ALIGN="center">PERGURUAN TINGGI MUHAMMADIYAH YOGYAKARTA</h3></td>
+				</tr>
+				<tr>
+					<td width="100%" colspan="2"><H2 style="margin-top: 15px;" ALIGN="center">KARTU MAHASISWA</H2></td>
+				</tr>
+				<tr>
+					<td width="100%" colspan="2"><PRE>
+Nama		:<input type="text" size="80" name="inama">
+NIM		:<input type="text" size="80" name="inim">
+Fakultas	:<input type="text" size="80" name="ifak">
+Prodi		:<input type="text" size="80" name="iprod">
+Alamat		:<textarea name="iang"></textarea>
+					</td></pre>
+				</tr>
+				<tr style="background: #074456;">
+					<td width="100%" colspan="2">
+						<center>
+							<INPUT TYPE = "button" value = "Cetak" onclick = "cetak()">
+							<INPUT TYPE = "reset" value = "Ulang">
+						</center>
+					</td>
+				</tr>
+			</table>
+			<table border="1" align="center"width="50%" style="background-image: linear-gradient(orange, white);">
+				<tr>
+					<td width="20%"><center><img src="https://fkip.uad.ac.id/wp-content/uploads/Logo-UAD-Berwarna.png" width="80%"></center></td>
+					<td width="80%"><H2 ALIGN="center">UNIVERSITAS AHMAD DAHLAN</H2><h3 ALIGN="center">PERGURUAN TINGGI MUHAMMADIYAH YOGYAKARTA</h3></td>
+				</tr>
+				<tr>
+					<td width="100%" colspan="2"><H2 style="margin-top: 15px;" ALIGN="center">KARTU MAHASISWA</H2></td>
+				</tr>
+				<tr>
+					<td width="50%" colspan="2"><pre>
+Nama		:<input type="text" readonly size="80" name="onama">
+NIM		:<input type="text" readonly size="80" name="onim">
+Fakultas	:<input type="text" readonly size="80" name="ofak">
+Prodi		:<input type="text" readonly size="80" name="oprod">
+Alamat		:<textarea readonly name="oang" ></textarea>
+					</td><pre>
+				</table>
+		</FORM>
+	</BODY>
+</HTML>
